@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Data dữ liệu Client Server</title>
+	<link rel="stylesheet" href="">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+	<style>
+		*{margin: 0;padding: 0;width: auto;}
+		body{background: url('./asset/image/bg_logo.jpg') no-repeat;background-size: cover;color: black;}
+		.container{width: auto;margin-top: 30px;}
+		.row{overflow-x: auto;margin-top: 10px;}
+		.row table{overflow-x: auto;margin-top: 10px;}
+		.row-row-col-8{margin:20px;}
+		.col-col-md-2{float: left;margin-left: 600px;background: blue;border: none;border-radius: 5px;height: 50px;font-size: 14px;color: white;width: 150px;}
+		.col-col-md{width: 300px;float: left;}
+		.footer{float: left;width: auto;}
+		/* .row-footer-1{width: 300px;float: left;margin-left: 100px;}
+		.row-footer-1 p{width: 150px;float: left;font-size: 12px;}
+		.row-footer span{text-align: center;} */
+		.float-end input{width: 200px;}
+	</style>
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form class="row g-3">
+			<div class="row gx-5">
+				<div class="col">
+				 <div class="p-3">
+					 <h2>Danh sách sinh viên</h2>
+				 </div>
+				</div>
+				<div class="col">
+				  <div class="p-3">
+					<button type="submit" class="col-6 col-sm- col-lg-4 btn btn-primary btn-lg float-end">+Thêm sanh sách mới</button>
+				  </div>
+				</div>
+			  </div>
+			<div class="row">
+				<!-- <div class="row g align-items-center"> -->
+					<div class="col -3">
+						<label for="inputPassword6" class="col-form-label">Họ và Tên</label>
+						<label for=""><input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" required></label>
+					</div>
+					<div class="col-3">
+						<label for="inputPassword6" class="col-form-label">Mã Hồ Sơ</label>
+						<label for=""><input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" required></label>
+					</div>
+					<div class="col-3">
+						<label for="inputPassword6" class="col-form-label">Mã Sinh Viên</label>
+						<label for=""><input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" required></label>
+					</div>
+					<div class="col-3">
+						<label for="" class="mx-auto" style="margin-top:38px">
+							<input type="search" id="inputPassword6" class="form-control" placeholder="Tìm kiếm theo từ khóa bất kì" aria-describedby="passwordHelpInline">
+						</label>
+					</div>
+				<!-- </div> -->
+			</div>
+			<div class="row">
+				<table class="table table-striped col 12 table-hover">
+					<thead>
+					  <tr style="background-color: #989898;">
+						<th scope="col">STT</th>
+						<th scope="col">Mã Hồ Sơ</th>
+						<th scope="col">Mã Sinh Viên</th>
+						<th scope="col">Họ Tên</th>
+						<th scope="col">Giới tính</th>
+						<th scope="col">Ngày Sinh</th>
+						<th scope="col">Số Điện Thoại</th>
+						<th scope="col">Email</th>
+						<th scope="col">Nơi Sinh</th>
+						<th scope="col">Số CMND/CCCD</th>
+						<th scope="col">Địa chỉ</th>
+						<th scope="col">Hành Động</th>	
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<th scope="row">2</th>
+						<td>TVU01925</td>
+						<td>123456789</td>
+						<td>Huỳnh Thị Kim Hồng</td>
+						<td>Nữ</td>
+						<td>20/10/1995</td>
+						<td>0941256478</td>
+						<td>honghn@gmail.com</td>
+						<td>Hà Nội</td>
+						<td>00119522222</td>
+						<td>Hà Đông - Hà Nội</td>
+						<td>
+							<span><i class="fas fa-edit"></i></span>
+							<span><i class="fas fa-trash-alt"></i></span>
+						</td>
+					  </tr>
+					  <tr>
+						<th scope="row">3</th>
+						<td>TVU01926</td>
+						<td>123456788</td>
+						<td>Trần Quốc Bảo</td>
+						<td>Nam</td>
+						<td>20/10/1991</td>
+						<td>0941078430</td>
+						<td>baoki@gmail.com</td>
+						<td>Hải Phòng</td>
+						<td>04801022839</td>
+						<td>Tần Triều - Hải Phòng</td>
+						<td>
+							<span><i class="fas fa-edit"></i></span>
+							<span><i class="fas fa-trash-alt"></i></span>
+						</td>
+					  </tr>
+					  <tr>
+						<th scope="row">3</th>
+						<td>TVU01927</td>
+						<td>123456789</td>
+						<td>Huỳnh Thị Kim Hồng</td>
+						<td>Nữ</td>
+						<td>20/10/1995</td>
+						<td>0941256478</td>
+						<td>honghn@gmail.com</td>
+						<td>Hà Nội</td>
+						<td>00119522222</td>
+						<td>Hà Đông - Hà Nội</td>
+						<td>
+							<span><i class="fas fa-edit"></i></span>
+							<span><i class="fas fa-trash-alt"></i></span>
+						</td>
+					  </tr>
+					  <tr>
+						<th scope="row">1</th>
+						<td>TVU01928</td>
+						<td>123456788</td>
+						<td>Trần Quốc Bảo</td>
+						<td>Nam</td>
+						<td>20/10/1991</td>
+						<td>0941078430</td>
+						<td>baoki@gmail.com</td>
+						<td>Hải Phòng</td>
+						<td>04801022839</td>
+						<td>Tần Triều - Hải Phòng</td>
+						<td>
+							<span><i class="fas fa-edit"></i></span>
+							<span><i class="fas fa-trash-alt"></i></span>
+						</td>
+					  </tr>
+					</tbody>
+				  </table>
+			</div>
+			<div class="row">
+					<div class="col-md-5 float-left"></div>
+					<div class="col-md-5 float-center">
+						<span><i class="fas fa-angle-left"></i></span>
+						<span class="footer-border">1</span>
+						<span><i class="fas fa-angle-right"></i></span>
+					</div>
+					<div class="col-md float-right">
+						<p>Số bản ghi mỗi trang</p>
+						<select>
+							<option>10</option>
+							<option>20</option>
+							<option>50</option>
+							<option>100</option>
+						</select>
+					</div>
+			</div>
+		  </form>
+	</div>
+</body>
+</html>
